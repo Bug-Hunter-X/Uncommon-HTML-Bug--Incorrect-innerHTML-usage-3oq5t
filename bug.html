@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text will not show initially.
+  </div>
+  <script>
+    // Incorrectly using innerHTML on an element that hasn't been fully parsed yet.
+    document.getElementById('myDiv').innerHTML = "<p>This text will show after a delay.</p>";
+  </script>
+</body>
+</html>
