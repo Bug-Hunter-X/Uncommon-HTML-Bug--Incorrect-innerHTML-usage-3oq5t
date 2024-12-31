@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Solution: Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text will show initially.
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('myDiv').innerHTML = "<p>This text will show after the page is fully loaded.</p>";
+    });
+  </script>
+</body>
+</html>
